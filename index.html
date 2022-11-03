@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна №2</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="https://t.me/meowmeowmeowgram" class="nav-logo" target="_blank">meowgram</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#logIn" class="nav-link">Форма входу</a>
+        </li>
+        <li class="nav-item">
+          <a href="#feedback" class="nav-link">Форма зворотнього зв'язку</a>
+        </li>
+        <li class="nav-item">
+          <a href="#signUp" class="nav-link">Форма реєстрації</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="background">
+    <main>
+      <section class="description">
+        <div class="description__container">
+          <div class="description__content">
+            <img src="./img/image1.jpg" alt="cat" width="220px" height="250px" class="first__image">
+            <p><strong>Meowgram</strong> — спільнота для тих, хто полюбляє котиків та не уявляє своє існування без
+              картинок з котиками.
+            <p>Реєструйтесь на <strong>meowgram</strong> та насолоджуйтесь фотографіями котиків.</p>
+            <p>*На жаль, текст далі я не придумала, а сторінку заповнити треба, тому нехай тут буде щось на котячому...
+            </p>
+            <img src="./img/image2.jpg" alt="cat" width="200px" height="200px" class="second__image">
+            <p>Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу
+              мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу
+              мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу
+              мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу
+              мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу
+              мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу
+              мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу
+              мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу
+              мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу
+              мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу
+              мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу
+              мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу
+            </p>
+          </div>
+          <div class="three-pics">
+            <img src="./img/image3.jpg" alt="cat" width="200px" height="200px" class="first">
+            <img src="./img/image3.jpg" alt="cat" width="200px" height="200px" class="second">
+            <img src="./img/image3.jpg" alt="cat" width="200px" height="200px" class="third">
+          </div>
+        </div>
+      </section>
+
+      <section class="logIn-form">
+        <div class="logIn__container">
+          <div class="logIn-title">
+            <h2 id="logIn">Форма входу</h2>
+          </div>
+
+          <form class="logIn">
+            <input type="text" class="fields" name="auth_login" placeholder="Логін" required><br>
+            <input type="password" class="fields" name="auth_password" minlength="8" placeholder="Пароль" required><br>
+            <button class="logIn-button" type="submit">Вхід</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="feedback-form">
+        <div class="feedback__container">
+          <div class="feedback-title">
+            <h2 id="feedback">Форма зворотнього зв'язку</h2>
+          </div>
+
+          <form class="feedback">
+            <div class="feedback-left-part">
+              <input type="text" class="fields" name="feedback_name" placeholder="Ім'я" required><br>
+              <input type="email" class="fields" name="feedback_email" placeholder="Ел. пошта" required><br>
+              <select name="feedback_topic[]" class="fields" required>
+                <option disabled selected>Тема повідомлення</option>
+                <option>Забув пароль</option>
+                <option>Забув логін</option>
+                <option>Сумую за котиками</option>
+                <option>Інше</option>
+              </select><br>
+              <button class="logIn-button" type="submit">Вхід</button>
+            </div>
+
+            <div class="feedback-right-part">
+              <textarea name="feedback_details" class="fields" placeholder="Введіть повідомлення"></textarea><br>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="signUp-form">
+        <div class="signUp__container">
+          <div class="signUp-title">
+            <h2 id="signUp">Форма реєстрації</h2>
+          </div>
+
+          <form class="signUp">
+            <div class="signUp-left-part">
+              <img src="./img/avatar.png" alt="avatar" class="avatar"><br>
+
+              <label for="name">Ім’я:</label>
+              <input type="text" class="fields" name="reg_firstname" placeholder="Ім’я" required><br>
+              <label for="lastname">Прізвище:</label>
+              <input type="text" class="fields" name="reg_lastname" placeholder="Прізвище"><br>
+              <label for="sex">Стать:</label>
+              <div class="male-or-female">
+                <label for="male"><input type="radio" class="fields" name="reg_sex">Чоловіча</label>
+                <label for="female"><input type="radio" class="fields" name="reg_sex">Жіноча</label><br>
+              </div>
+              <label for="age">Вік:</label>
+              <input type="number" class="fields" name="reg_age" value="21" max="100" min="14" step="1" required><br>
+              <label for="date_of_birth">Дата народження:</label>
+              <input type="date" class="fields" name="reg_birthday" required><br>
+              <button class="button__1" type="reset">Скасувати</button>
+            </div>
+
+            <div class="signUp-right-part">
+              <label for="country">Країна проживання</label>
+              <input list="countries" class="fields" name="reg_county" placeholder="Оберіть країну проживання">
+              <datalist id="countries">
+                <option value="Україна">
+                <option value="Польща">
+                <option value="Німеччина">
+                <option value="Франція">
+                <option value="Норвегія">
+              </datalist><br>
+              <label for="phone_number">Номер телефону</label>
+              <input type="tel" class="fields" name="reg_tel" placeholder="+38(0XX)XXX-XX-XX"><br>
+              <label for="contact">Соцмережа:</label>
+              <input type="text" class="fields" name="reg_contact" placeholder="Посилання на соц.мережу"><br>
+              <label for="email">Електронна пошта</label>
+              <input type="email" class="fields" name="reg_email" placeholder="Ел. пошта" required><br>
+              <label for="password">Пароль</label>
+              <input type="password" class="fields" placeholder="Пароль" minlength="8" required><br>
+              <label for="password">Повторіть пароль</label>
+              <input type="password" class="fields" placeholder="Введіть пароль ще раз" minlength="8" required><br>
+              <label><input type="checkbox" class="fields" required> Чи полюбляєте Ви котиків?</label><br>
+              <button class="button__2" type="submit">Зареєструватися</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="social-networks">
+        <p class="follow-us">Folllow us on our social networks:</p>
+        <div class="icons">
+          <a href="https://t.me/meowmeowmeowgram" target="_blank">
+            <img src="img/icons/Instagram.png" width="45" height="45" alt="Instagram"></a>
+          <a href="https://t.me/meowmeowmeowgram" target="_blank">
+            <img src="img/icons/Twitter.png" width="45" height="45" alt="Twitter"></a>
+          <a href="https://t.me/meowmeowmeowgram" target="_blank">
+            <img src="img/icons/Telegram.png" width="45" height="45" alt="Telegram"></a>
+          <a href="https://t.me/meowmeowmeowgram" target="_blank">
+            <img src="img/icons/Facebook.png" width="45" height="45" alt="Facebook"></a>
+        </div>
+      </div>
+      <img src="img/footer-logo.png" width="80" height="80" alt="logo"></a>
+    </div>
+    <div class="copyrights">Copyright &copy; 2022</div>
+  </footer>
+
+</body>
+<script src="/main.js"></script>
+
+</html>
